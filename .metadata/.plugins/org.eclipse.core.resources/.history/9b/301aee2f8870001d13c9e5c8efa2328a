@@ -1,0 +1,16 @@
+
+public class math {
+
+	public static void main(String[] args) {
+	
+    double x = 3.14;
+    double y = -10;
+    
+    double max = Math.max(x, y);
+    double min = Math.min(x, y);
+    
+    System.out.println(max);
+    System.out.println(min);
+	}
+
+}

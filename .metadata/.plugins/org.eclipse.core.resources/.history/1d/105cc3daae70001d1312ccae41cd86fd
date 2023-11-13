@@ -1,0 +1,36 @@
+import java.util.ArrayList;
+
+public class arrayList {
+
+	public static void main(String[] args) {
+		// ArrayList = a resizable array;
+		//			   Elements can be added and removed after compilation phase
+		//			   store reference data types
+		
+		
+			ArrayList<ArrayList<String>> bakeryList = new ArrayList();
+			
+			bakeryList.add("pasta");
+			bakeryList.add("garlic bread");
+			bakeryList.add("donuts");
+			
+			ArrayList<ArrayList<String>> produceList = new ArrayList();
+			
+			produceList.add("tomatoes");
+			produceList.add("potato");
+			produceList.add("rice");
+			
+			ArrayList<ArrayList<String>> drinkList = new ArrayList();
+			
+			drinkList.add("tea");
+			drinkList.add("coffee");
+			drinkList.add("coke");
+			
+			System.out.println(bakeryList);
+	
+		}
+		
+
+	}
+
+}

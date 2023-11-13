@@ -1,0 +1,29 @@
+package movies;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+
+public class Connection {
+
+	public static void main(String[] args) {
+		Connection conn = new Connection();
+
+		System.out.println(conn.getConnection());
+
+	}
+
+public Connection getConnection() {
+		
+		Connection connection = null;
+		
+		try {
+			
+			Class.forName("com.mysql.cj.jdbc.Driver");
+			connection = (Connection) DriverManager.getConnection("jdbc:mysql://localhost:3306/CRUD","root", "Depre$$!0n");
+			
+		}catch(Exception e) {
+			System.out.println(e);
+		}
+		return connection;
+	}
+}

@@ -1,0 +1,10 @@
+package nephew;
+
+public class Test {
+
+	public static void main(String[] args) {
+		new Read_data("Sadman Chowdhury","Nazrul Chowdhury","Parveen Akter","28.12.2006");
+
+	}
+
+}

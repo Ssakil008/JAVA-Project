@@ -1,0 +1,16 @@
+package nephew;
+
+public class Test {
+
+	public static void main(String[] args) {
+		//new Read_data("Sadman Chowdhury","Nazrul Chowdhury","Parveen Akter","28.12.2006");
+		new Read_data("Arafat Hossain","Shahadat Hossain","Arifa Akter","28.01.2010");
+		new Read_data("Shafayat Hossain","Shahadat Hossain","Arifa Akter","21.07.2014");
+		new Read_data("Tanima Tabassum","Nazrul Chowdhury","Parveen Akter","13.08.2014");
+		new Read_data("Fardin Karim","Fazlul Karim","Nasrin Akter","06.11.2014");
+		new Read_data("Afnan Chowdhury","Nazrul Chowdhury","Parveen Akter","12.11.2021");
+		new Read_data("Muktafi bin Mohiuddin","Mohiuddin","Nishat Tamanna","10.05.2022");
+
+	}
+
+}

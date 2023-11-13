@@ -1,0 +1,23 @@
+
+public class postmortemOfString {
+
+	public static void main(String[] args) {
+		
+		String name = "Ssakil";
+		
+		//boolean result = name.equals("ssakil");
+		boolean result = name.equalsIgnoreCase("ssakil");
+		//boolean result = name.equals("ssakil");
+		//boolean result = name.equals("ssakil");
+		//boolean result = name.equals("ssakil");
+		//boolean result = name.equals("ssakil");
+		//boolean result = name.equals("ssakil");
+		//boolean result = name.equals("ssakil");
+		//boolean result = name.equals("ssakil");
+		
+		System.out.println(result);
+				
+
+	}
+
+}

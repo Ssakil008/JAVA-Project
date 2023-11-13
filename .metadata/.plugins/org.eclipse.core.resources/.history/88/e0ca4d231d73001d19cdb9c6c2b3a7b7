@@ -1,0 +1,27 @@
+
+public class University extends Student{
+	
+	String Qualification;
+	
+	void displayInformation() {
+		System.out.println("Name :"+name);
+		System.out.println("Age :"+age);
+		System.out.println("Qualification :"+Qualification);
+	}
+
+	public void age(int i) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public void name(String string) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public void Qualification(String string) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

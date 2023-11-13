@@ -1,0 +1,9 @@
+package movies;
+
+public class Test {
+	public static void main(String[] args) {
+		
+		new Insert_data("3 Idiots","Rajkumar Hirani",2009);
+	}
+
+}

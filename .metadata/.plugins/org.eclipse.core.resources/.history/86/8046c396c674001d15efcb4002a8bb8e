@@ -1,0 +1,63 @@
+package CRUD;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+
+public class CRUD_Test {
+
+	public static void main(String[] args) {
+		CRUD_Test objTest = new CRUD_Test();
+		// objTest.create_data(1, "Ssakil", "ssakil@gmail.com");
+		// objTest.create_data(2, "Monir", "monir@gmail.com");
+		// objTest.create_data(3, "Uddin", "uddin@gmail.com");
+		objTest.read_data(2);
+	}
+
+	public void create_data(int id, String name, String email) {
+
+		DB_Connection conn = new DB_Connection();
+		Connection connection = conn.get_connection();
+
+		PreparedStatement ps = null;
+		try {
+			String query = "insert into user(id,name,email) values (?,?,?)";
+			ps = connection.prepareStatement(query);
+			ps.setInt(1, id);
+			ps.setString(2, name);
+			;
+			ps.setString(3, email);
+			System.out.println(ps);
+			ps.executeUpdate();
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+
+	public void read_data(int id) {
+
+		DB_Connection conn = new DB_Connection();
+		Connection connection = conn.get_connection();
+
+		PreparedStatement ps = null;
+		ResultSet rs = null;
+		try {
+			String query = "select * from user where id = ?";
+			ps = connection.prepareStatement(query);
+			ps.setInt(1, id);
+			System.out.println(ps);
+			rs = ps.executeQuery();
+
+			while (rs.next()) {
+				System.out.println("ID : "+rs.getInt(id));
+				System.out.println("Name : "+rs.getString("name"));
+				System.out.println("Email : "+rs.getString("email"));
+				System.out.println("---------------------------");
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+
+	}
+
+}

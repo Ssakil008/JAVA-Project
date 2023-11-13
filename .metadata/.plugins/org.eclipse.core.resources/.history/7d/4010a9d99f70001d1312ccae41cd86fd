@@ -1,0 +1,15 @@
+
+public class postmortemOfString {
+
+	public static void main(String[] args) {
+		
+		String name = "Ssakil";
+		
+		boolean result = name.equals("MONIRU");
+		
+		System.out.println(result);
+				
+
+	}
+
+}

@@ -1,0 +1,22 @@
+package CRUD;
+
+import java.util.Scanner;
+
+class crud{
+	public static void main(String[] args) {
+		
+		@SuppressWarnings("resource")
+		Scanner s = new Scanner(System.in);
+		
+		int choice;
+		do {
+			System.out.println("1.INSERT");
+			System.out.println("2.DISPLAY");
+			System.out.println("3.SEARCH");
+			System.out.println("4.DELETE");
+			System.out.println("5.UPDATE");
+			choice = s.nextInt();
+			
+		}while(choice !=0);
+	}
+}

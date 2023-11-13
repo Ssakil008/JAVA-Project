@@ -1,0 +1,9 @@
+package movies;
+
+public class Test {
+	public static void main(String[] args) {
+		
+		new Insert_data("Jurassic Park","Steven Spielberg",1993);
+	}
+
+}

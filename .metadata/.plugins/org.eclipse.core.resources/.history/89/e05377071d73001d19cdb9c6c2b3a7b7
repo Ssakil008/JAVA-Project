@@ -1,0 +1,15 @@
+
+public class Test {
+
+	public static void main(String[] args) {
+		
+
+		Student s = new Student();
+		University u = new University();
+		
+		s.displayInformation();
+		u.displayInformation();
+
+	}
+
+}

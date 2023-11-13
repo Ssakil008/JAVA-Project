@@ -1,0 +1,27 @@
+package List;
+
+import java.util.LinkedList;
+
+public class ListDemo {
+
+	public static void main(String[] args) {
+		
+		LinkedList<String> CountryNames = new LinkedList<String>();
+		
+		CountryNames.add("Bangladesh");
+		CountryNames.add("India");
+		CountryNames.add("Pakistan");
+		CountryNames.add("Afganisthan");
+		CountryNames.add("Sri lanka");
+		CountryNames.add("Nepal");
+		CountryNames.addFirst("Australia");
+		CountryNames.addLast("Portugal");
+		
+		System.out.println(CountryNames);
+		
+		for (String Country : CountryNames) {
+			System.out.println(Country);
+		}
+	}
+
+}

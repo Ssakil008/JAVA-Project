@@ -1,0 +1,41 @@
+package CRUD;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+
+public class CRUD_Test {
+	
+	public static void main(String[] args) {
+		CRUD_Test objTest = new CRUD_Test();
+		//objTest.create_data(1, "Ssakil", "ssakil@gmail.com");
+		//objTest.create_data(2, "Monir", "monir@gmail.com");
+		//objTest.create_data(3, "Uddin", "uddin@gmail.com");
+	}
+	
+	public void create_data(int id, String name, String email) {
+		
+		DB_Connection conn = new DB_Connection();
+		Connection connection = conn.get_connection();
+		
+		PreparedStatement ps = null;
+		try {
+			String query = "insert into user(id,name,email) values (?,?,?)";
+			ps = connection.prepareStatement(query);
+			ps.setInt(1, id);
+			ps.setString(2, name);;
+			ps.setString(3, email);
+			System.out.println(ps);
+			ps.executeUpdate();
+		}catch(Exception e) {
+			e.printStackTrace();
+		}
+		
+	}
+
+	public void read_data(int i) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	
+}

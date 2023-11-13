@@ -1,0 +1,37 @@
+
+public class main {
+
+	public static void main(String[] args) {
+	
+		/*car mycar1 = new car();
+		car mycar2 = new car();
+		
+		System.out.println(mycar1.make);
+		System.out.println(mycar1.model);
+		System.out.println();
+		System.out.println(mycar2.make);
+		System.out.println(mycar2.model);
+		System.out.println(); 
+		mycar1.drive();
+		mycar2.brake();
+		
+		Human human1 = new Human("Ssakil", 28, 65);
+		Human human2 = new Human("Monir", 27, 67);
+		
+		System.out.println(human1.name);
+		System.out.println(human2.weight);
+		
+		human1.eat();
+		human2.drink();
+		
+		DiceRoller diceroll = new DiceRoller();*/
+		
+		Pizza pizza = new Pizza();
+		
+		System.out.println("Here are the ingredients of your pizza:");
+		
+		
+		
+	}
+
+}

@@ -1,0 +1,15 @@
+
+public class Shape {
+
+	String area;
+	
+	Shape(){
+		
+		void area();
+		
+		return 0;
+	}
+
+	
+	
+}

@@ -1,0 +1,12 @@
+package List;
+import java.util.HashMap;
+public class HashMap {
+
+	public static void main(String[] args) {
+		
+		HashMapDemo<Integer,String> customer = new HashMapDemo<Integer, String>();
+		
+
+	}
+
+}
